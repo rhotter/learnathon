@@ -1,45 +1,16 @@
-# Intro to Programming Workshop Source Code-2
-> By the Marianopolis Programming Club
->
-> Sunday, February 4, 2018 from 11:00 AM - 12:30 PM.
+# Workshop Notes
 
-Here you'll find all the source code from the workshop.
-
-If you have any questions, you can email us at info@marihacks.com.
-
-Skip to a section:
-* [Hello world](#01)
-* [Hello, name](#02)
-* [Print empty tic-tac-toe board](#03)
-* [Add X and O to board](#04)
-* [Let user add an X to the board](#05)
-* [Check for winner](#06)
-* [Intro to `if` statement](#07)
-* [A faster way to check for winner](#08)
-* [Intro to `for` loops](#09)
-* [Checking for diaganol lines](#10)
-* [A cleaner and more efficient way to organize code](#11)
-* [Putting everything into functions](#12)
-* [Intro to `while` loops](#13)
-* [Getting user input continuously](#14)
-* [Adding players](#15)
-* [Check for tie and call it a game](#16)
-
-
-<a name = "01"></a>
 ### Hello world
 ```python
 print("Hello, world.")
 ```
 
-<a name = "02"></a>
 ### Hello, name
 ```python
 name = input("What is your name? ")
 print("Hello, %s" % name)
 ```
 
-<a name = "03"></a>
 ### Print empty tic-tac-toe board
 ```python
 # Print an empty board
@@ -49,7 +20,6 @@ print("  |  |  ")
 print("  |  |  ")
 ```
 
-<a name = "04"></a>
 ### Add X and O to board
 ```python
 # Create an array of 9 spaces to represent our board
@@ -65,7 +35,6 @@ print(" %s | %s | %s "   % (board[3],board[4],board[5]))
 print(" %s | %s | %s \n" % (board[6],board[7],board[8]))
 ```
 
-<a name = "05"></a>
 ### Let user add an X to the board
 ```python
 # Initialize board array
@@ -82,7 +51,6 @@ print(" %s | %s | %s "   % (board[3],board[4],board[5]))
 print(" %s | %s | %s \n" % (board[6],board[7],board[8]))
 ```
 
-<a name = "06"></a>
 ### Check for winner
 ```python
 # Pick some configuration for board
@@ -104,7 +72,6 @@ if (board[0] == board[1] == board[2] and board[0]!= ' ') or (board[3] == board[4
     print('There is a winner')
 ```
 
-<a name = "07"></a>
 ### Intro to `if` statements
 Example together
 ```python
@@ -120,7 +87,6 @@ else:
 ```
 [Solution to if statement exercise](https://github.com/marihacks/learnathon-solutions/blob/master/if-statement.md)
 
-<a name = "08"></a>
 ### A faster way to check for winner
 ```python
 # Pick some configuration for board
@@ -143,7 +109,6 @@ for i in range(0,7,3):
         print("There is a winner")
 ```
 
-<a name = "09"></a>
 ### Intro to `for` loops
 ```python
 for i in range(0,100):
@@ -185,14 +150,14 @@ if board[0] == board[4] == board[8] and board[0] != ' ':
 if board[2] == board[4] == board[6] and board[2] != ' ':
     print("There is a winner")
 ```
-<a name = "11"></a>
+
 ### A cleaner and more efficient way to organize code
 ```
 Some example here
 ```
 [Solutions to minimum value in a list exercise](https://github.com/marihacks/learnathon-solutions/blob/master/min-value.md)
 
-<a name = "12"></a>
+
 ### Putting everything into functions
 ```python
 
@@ -238,13 +203,11 @@ if isWinner(board):
     print('There is a winner!')
 ```
 
-<a name = "13"></a>
 ### Intro to `while` loops
 ```
 Some while loop example
 ```
 
-<a name = "14"></a>
 ### Getting user input continuously
 ```python
 # Print the board
@@ -298,7 +261,7 @@ while True:
         break
 
 ```
-<a name = "15"></a>
+
 ### Adding players
 ```python
 # Print the board
@@ -360,7 +323,7 @@ while True:
             player = 'X'
 ```
 
-<a name = "16"></a>
+
 ### Check for tie and call it a game.
 ```python
 # Print the board
