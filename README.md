@@ -68,7 +68,8 @@ print(" %s | %s | %s \n" % (board[6],board[7],board[8]))
     # You're a winner if you have three spots occupied horizontally, vertically, or diagonally
 
 # Horizontally
-if (board[0] == board[1] == board[2] and board[0]!= ' ') or (board[3] == board[4] == board[5] and board[3]!=' ') or (board[6] == board[7] == board[8] and board[0]!=' '):
+if (board[0] == board[1] == board[2] and board[0]!= ' ') or(board[3] == board[4] == board[5] and board[3]!=' ')
+or (board[6] == board[7] == board[8] and board[0]!=' '):
     print('There is a winner')
 ```
 
@@ -116,7 +117,6 @@ for i in range(0,100):
 ```
 [Solution to vertical check exercise](https://github.com/marihacks/learnathon-solutions/blob/master/vertical-check.md)
 
-<a name = "10"></a>
 ### Checking for diaganol lines
 ```python
 # Pick some configuration for board
@@ -174,7 +174,8 @@ def print_board(board):
     print(" %s | %s | %s \n" % (board[6],board[7],board[8]))
 
 # Check if there is a winner
-    # You're a winner if you have three spots occupied horizontally, vertically, or diagonally
+    # You're a winner if you have three spots occupied horizontally, vertically,
+    or diagonally
 
 # Horizontally
 def checkHorizontal(board):
@@ -190,7 +191,8 @@ def checkVertical(board):
 
 # Diagonally
 def checkDiaganol(board):
-    if board[0] == board[4] == board[8] and board[0] != ' ' or (board[2] == board[4] == board[6] and board[2] != ' '):
+    if board[0] == board[4] == board[8] and board[0] != ' ' or
+    (board[2] == board[4] == board[6] and board[2] != ' '):
         return True
 
 # Check if there is a winner using the functions from above
@@ -233,7 +235,8 @@ def checkVertical(board):
 
 # Diagonally
 def checkDiaganol(board):
-    if board[0] == board[4] == board[8] and board[0] != ' ' or (board[2] == board[4] == board[6] and board[2] != ' '):
+    if board[0] == board[4] == board[8] and board[0] != ' ' or
+    (board[2] == board[4] == board[6] and board[2] != ' '):
         return True
 
 # Check if there is a winner using the functions from above
@@ -287,7 +290,8 @@ def checkVertical(board):
 
 # Diagonally
 def checkDiaganol(board):
-    if board[0] == board[4] == board[8] and board[0] != ' ' or (board[2] == board[4] == board[6] and board[2] != ' '):
+    if board[0] == board[4] == board[8] and board[0] != ' ' or
+    (board[2] == board[4] == board[6] and board[2] != ' '):
         return True
 
 # Check if there is a winner using the functions from above
@@ -349,7 +353,8 @@ def checkVertical(board):
 
 # Diagonally
 def checkDiaganol(board):
-    if board[0] == board[4] == board[8] and board[0] != ' ' or (board[2] == board[4] == board[6] and board[2] != ' '):
+    if board[0] == board[4] == board[8] and board[0] != ' ' or
+    (board[2] == board[4] == board[6] and board[2] != ' '):
         return True
 
 # Check if there is a winner using the functions from above
