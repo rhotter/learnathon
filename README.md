@@ -1,4 +1,4 @@
-# Intro to Programming Workshop Source Code
+# Intro to Programming Workshop Source Code-2
 > By the Marianopolis Programming Club
 >
 > Sunday, February 4, 2018 from 11:00 AM - 12:30 PM.
